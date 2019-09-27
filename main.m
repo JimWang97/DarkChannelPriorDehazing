@@ -12,4 +12,4 @@ darkchannel=calcDarkChannel(I,7);%计算暗通道
 T=1-0.95*darkchannel/min(ALight(1,:));%计算原始的T
 output=defogging(I,ALight,T);%原始T去雾
 imshow(output);
-imwrite(output, "output.bmp");
+imwrite(output, 'output.bmp');
